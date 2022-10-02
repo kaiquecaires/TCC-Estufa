@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #2a9d8f
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > span {
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card {
+  width: 90%;
+  min-height: 250px;
+  box-shadow: 1px 5px 11px 0px rgba(0,0,0,0.33);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card:last-child {
+  margin-bottom: 20px;
+}
+
+.card + .card {
+  margin-top: 10px;
+}
+
+.card > .percentage {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.card .range-slider {
+  width: 82%;
+  height: 25px;
+  margin: 5px 20px 5px 20px;
+}
+
+.card .sensor-description {
+  font-weight: bold;
+  margin: 5px 20px 5px 20px;
+}
+
+.card .card-divider {
+  width: 80%;
+  padding: 0;
+  display: block;
+  margin: 5px 20px 5px 20px;
+}

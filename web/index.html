@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Estufa - Controle</title>
+</head>
+<body>
+  <header>
+    <span>Estufa - Controle</span>
+  </header>
+  <main>
+    <div class="card">
+      <span class="sensor-description">Tipo sensor: Umidade do solo</span>
+      <span class="sensor-description">Valor Atual: <span id="soilMoistureValueDescription"></span></span>
+      <span class="sensor-description">Status Bomba de Água: <span id="waterBombStatus"></span></span>
+      <hr class="card-divider">
+      <span class="sensor-description">
+        <input type="checkbox" id="soilMoistureEnabled">
+        <label for="soilMoistureEnabled">Habilitar funcionalidade:</label>
+      </span>
+      <input type="range" min="0" max="100" value="50" class="range-slider" id="soilMoisture" disabled>
+      <span id="soilMoistureDescription" class="sensor-description">Ligar bomba de água quando valor estiver acima de: 50%</span>
+    </div>
+
+    <div class="card">
+      <span class="sensor-description">Tipo sensor: Luminosidade</span>
+      <span class="sensor-description">Valor Atual: <span id="luminosityValueDescription"></span></span>
+      <span class="sensor-description">Status Lâmpada: <span id="lampStatus"></span></span>
+      <hr class="card-divider">
+      <span class="sensor-description">
+        <input type="checkbox" id="luminosityEnabled">
+        <label for="luminosityEnabled">Habilitar funcionalidade:</label>
+      </span>
+      <input type="range" min="0" max="100" value="50" class="range-slider" id="luminosity" disabled>
+      <span id="luminosityDescription" class="sensor-description">Ligar lâmpada quando valor estiver abaixo de: 50%</span>
+    </div>
+
+    <div class="card">
+      <span class="sensor-description">Tipo sensor: Temperatura</span>
+      <span class="sensor-description">Valor Atual: <span id="temperatureValueDescription"></span></span>
+      <hr class="card-divider">
+      <span class="sensor-description">Tipo sensor: Umidade do ar</span>
+      <span class="sensor-description">Valor Atual: <span id="airHumidityValueDescription"></span></span>
+      <hr class="card-divider">
+      <span class="sensor-description">Status Cooler: <span id="coolerStatus"></span></span>
+      <span class="sensor-description">Status Lâmpada Aquecedora: <span id="heatingLampStatus"></span></span>
+      <hr class="card-divider">
+      <span class="sensor-description">
+        <input type="checkbox" id="temperatureEnabled">
+        <label for="temperatureEnabled">Habilitar funcionalidade:</label>
+      </span>
+      <input type="range" min="0" max="100" value="25" class="range-slider" id="temperature" disabled>
+      <span id="temperatureDescription" class="sensor-description">Ligar Cooler quando temperatura estiver acima de: 25°C</span>
+      <hr class="card-divider">
+      <span class="sensor-description">
+        <input type="checkbox" id="heatingLampEnabled">
+        <label for="heatingLampEnabled">Habilitar funcionalidade:</label>
+      </span>
+      <input type="range" min="0" max="100" value="20" class="range-slider" id="heatingLamp" disabled>
+      <span id="heatingLampDescription" class="sensor-description">Ligar Lâmpada Aquecedora quando temperatura estiver abaixo de: 20°C</span>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
