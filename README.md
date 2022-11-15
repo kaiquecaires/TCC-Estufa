@@ -1,2 +1,2 @@
 # TCC-Estufa
-Projeto de TCC para o curso de Sistemas de Informação
+Projeto de TCC para o curso de Sistemas de Informação.
